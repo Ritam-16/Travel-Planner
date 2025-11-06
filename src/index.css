@@ -1,0 +1,119 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* src/index.css */
+@import 'react-datepicker/dist/react-datepicker.css';
+
+
+/* src/index.css or App.css */
+
+/* Hide Google banner */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+
+/* Tidy up dropdown */
+#google_translate_element select {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+/* Hide Google top translation banner (the grey bar) */
+.goog-te-banner-frame.skiptranslate { 
+  display: none !important;
+}
+
+/* Remove body offset added by the banner */
+body { top: 0px !important; }
+
+/* Hide the small "Powered by Google Translate" logo text if present */
+.goog-logo-link, .goog-te-gadget .goog-te-combo {
+  display: inline-block !important; /* keep selector visible */
+}
+
+/* Optionally hide extra span text and keep only the select element */
+.goog-te-gadget span { display: none !important; }
+#google_translate_element select {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+/* If any iframe is visible, hide it */
+iframe.goog-te-banner-frame.skiptranslate { display: none !important; }
+
+/* Airbnb-style customizations */
+.react-datepicker {
+  font-family: inherit;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.react-datepicker__header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.react-datepicker__day--selected {
+  background: #ff385c !important;
+  color: white !important;
+}
+
+.react-datepicker__day--in-selecting-range {
+  background: #ffe0e6 !important;
+}
+.goog-te-banner-frame.skiptranslate, 
+.goog-te-gadget-icon {
+  display: none !important;
+}
+html, body {
+  position: static !important;
+  top: 0 !important;
+}
+#google_translate_element select {
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* === Hide Google Translate branding === */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget span {
+  display: none !important;
+}
+
+/* === Style the language dropdown === */
+.goog-te-gadget {
+  font-family: 'Inter', sans-serif !important;
+  background: transparent !important;
+  border: none !important;
+  font-size: 14px;
+}
+
+.goog-te-combo {
+  border: 1px solid #ccc !important;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.goog-te-combo:hover {
+  border-color: #007bff !important;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
